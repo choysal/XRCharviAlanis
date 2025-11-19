@@ -1,0 +1,3 @@
+[submodule "Assets/Samples/Unity-MRUtilityKitSample"]
+	path = Assets/Samples/Unity-MRUtilityKitSample
+	url = https://github.com/oculus-samples/Unity-MRUtilityKitSample

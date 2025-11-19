@@ -1,0 +1,3 @@
+/Users/allie/Desktop/fall 2025/xr/XRCharviAlanis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/allie/Desktop/fall 2025/xr/XRCharviAlanis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/FramePacing/CMakeLists.txt
+/Users/allie/Desktop/fall 2025/xr/XRCharviAlanis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt
