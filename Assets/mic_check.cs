@@ -37,23 +37,19 @@ public class PushToTalk : MonoBehaviour
     private void OnPressed(InputAction.CallbackContext ctx)
     {
         isHeld = true;
-        Debug.Log("🎤 Voice ACTIVATED");
         voice.Activate();
     }
 
     private void OnReleased(InputAction.CallbackContext ctx)
     {
         isHeld = false;
-        Debug.Log("🛑 Voice DEACTIVATED");
         voice.Deactivate();
     }
 
     private void OnStoppedListening()
     {
-        // If still holding the button, keep listening
         if (isHeld)
         {
-            Debug.Log("🔄 Auto-restarting mic...");
             voice.Activate();
         }
     }
@@ -72,15 +68,40 @@ public class PushToTalk : MonoBehaviour
     {
         Debug.Log("📥 FULL WIT RESPONSE: " + response.ToString());
 
-        // Check if trait exists
         var greetings = response["traits"]["wit$greetings"];
         if (greetings != null && greetings.Count > 0)
         {
             string value = greetings[0]["value"];
             if (value == "true")
             {
-                Debug.Log("👋 Greeting detected!");
+                Debug.Log("Greeting detected!");
                 characterAnimator.SetTrigger("Wave");
+            }
+        }
+
+        string transcript = response["text"];
+        if (!string.IsNullOrEmpty(transcript))
+        {
+            transcript = transcript.ToLower(); // normalize
+            if (transcript.Contains("sit"))
+            {
+                Debug.Log("Detected 'sit'");
+                characterAnimator.SetTrigger("Sit");
+            }
+            else if (transcript.Contains("set"))
+            {
+                Debug.Log("Detected 'sit'");
+                characterAnimator.SetTrigger("Sit");
+            }
+            else if (transcript.Contains("stand"))
+            {
+                Debug.Log("Detected 'stand'");
+                characterAnimator.SetTrigger("Stand");
+            }
+            else if (transcript.Contains("dance"))
+            {
+                Debug.Log("Detected 'dance'");
+                characterAnimator.SetTrigger("Dance");
             }
         }
     }
