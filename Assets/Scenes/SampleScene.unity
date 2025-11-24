@@ -2051,6 +2051,7 @@ MonoBehaviour:
         m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: 0}
+  characterAnimator: {fileID: 1719047247}
 --- !u!1 &1793089056
 GameObject:
   m_ObjectHideFlags: 0

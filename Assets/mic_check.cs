@@ -1,11 +1,13 @@
 using UnityEngine;
 using Oculus.Voice;   // AppVoiceExperience
 using UnityEngine.InputSystem;
+using Meta.WitAi.Json;
 
 public class PushToTalk : MonoBehaviour
 {
     public AppVoiceExperience voice;
     public InputActionProperty buttonAction;
+    public Animator characterAnimator;
 
     private bool isHeld = false;
 
@@ -18,6 +20,8 @@ public class PushToTalk : MonoBehaviour
         voice.VoiceEvents.OnStoppedListening.AddListener(OnStoppedListening);
         voice.VoiceEvents.OnFullTranscription.AddListener(OnFull);
         voice.VoiceEvents.OnPartialTranscription.AddListener(OnPartial);
+
+        voice.VoiceEvents.OnResponse.AddListener(OnWitResponse);
     }
 
     private void OnDisable()
@@ -62,5 +66,22 @@ public class PushToTalk : MonoBehaviour
     private void OnFull(string text)
     {
         Debug.Log("🟢 FULL: " + text);
+    }
+
+    private void OnWitResponse(WitResponseNode response)
+    {
+        Debug.Log("📥 FULL WIT RESPONSE: " + response.ToString());
+
+        // Check if trait exists
+        var greetings = response["traits"]["wit$greetings"];
+        if (greetings != null && greetings.Count > 0)
+        {
+            string value = greetings[0]["value"];
+            if (value == "true")
+            {
+                Debug.Log("👋 Greeting detected!");
+                characterAnimator.SetTrigger("Wave");
+            }
+        }
     }
 }
