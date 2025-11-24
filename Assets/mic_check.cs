@@ -79,6 +79,8 @@ public class PushToTalk : MonoBehaviour
             }
         }
 
+        string[] sadKeywords = { "hate you", "don't like you", "mean", "leave me alone", "annoying", "you suck"};
+
         string transcript = response["text"];
         if (!string.IsNullOrEmpty(transcript))
         {
@@ -102,6 +104,20 @@ public class PushToTalk : MonoBehaviour
             {
                 Debug.Log("Detected 'dance'");
                 characterAnimator.SetTrigger("Dance");
+            }
+            else if (transcript.Contains("love you") || (transcript.Contains("like you") && !transcript.Contains("don't like")))
+            {
+                Debug.Log("Detected 'love'");
+                characterAnimator.SetTrigger("Love");
+            }
+            foreach (string keyword in sadKeywords)
+            {
+                if (transcript.Contains(keyword))
+                {
+                    Debug.Log($"Detected 'sad");
+                    characterAnimator.SetTrigger("Sad");
+                    break;
+                }
             }
         }
     }
