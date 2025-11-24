@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Samples/Meta - Voice SDK - Immersive Voice Commands/81.0.0/Shapes/Shapes.unity
+    guid: e2afa732d18be6e43943396fdcda205d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: acf4ebcfb20ed49fabc99572bf22b6c4, type: 2}

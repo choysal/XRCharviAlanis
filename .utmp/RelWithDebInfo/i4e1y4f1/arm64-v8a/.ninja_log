@@ -1,12 +1,12 @@
 # ninja log v5
-27	490	1763511011436484049	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	fe002e01c827f244
-492	730	1763511011646231073	/Users/allie/Desktop/fall 2025/xr/XRCharviAlanis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/i4e1y4f1/obj/arm64-v8a/libswappywrapper.so	e807c5e24905a3da
-12	1412	1763511012353620032	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b83b9ef7094ae088
-6	1471	1763511012412629276	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	aee49e4cd1b579c0
-9	1472	1763511012413966475	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	7d9c87adabfbe67c
-14	1495	1763511012438659240	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	5843e55b09dd1577
-9	1552	1763511012494411067	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b2db3355446f084a
-20	1602	1763511012545293913	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	dbb97f9675fe3b88
-10	1739	1763511012682289385	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	7fbda530fe742e49
-0	1745	1763511012687892962	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	49a9f2bcfb96211c
 1745	1857	1763511012801872980	/Users/allie/Desktop/fall 2025/xr/XRCharviAlanis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/i4e1y4f1/obj/arm64-v8a/libgame.so	d25ebee49cf86e3e
+0	1745	1763511012687892962	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	49a9f2bcfb96211c
+10	1739	1763511012682289385	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	7fbda530fe742e49
+20	1602	1763511012545293913	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	dbb97f9675fe3b88
+9	1552	1763511012494411067	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b2db3355446f084a
+14	1495	1763511012438659240	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	5843e55b09dd1577
+12	1412	1763511012353620032	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b83b9ef7094ae088
+9	1472	1763511012413966475	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	7d9c87adabfbe67c
+6	1471	1763511012412629276	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	aee49e4cd1b579c0
+492	730	1763511011646231073	/Users/allie/Desktop/fall 2025/xr/XRCharviAlanis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/i4e1y4f1/obj/arm64-v8a/libswappywrapper.so	e807c5e24905a3da
+27	490	1763511011436484049	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	fe002e01c827f244

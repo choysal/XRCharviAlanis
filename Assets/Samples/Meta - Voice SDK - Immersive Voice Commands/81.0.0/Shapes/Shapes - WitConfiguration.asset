@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7588891467066084880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c2918ba0e7451694416d42d69e0944, type: 3}
+  m_Name: WitComposerData
+  m_EditorClassIdentifier: 
+  canvases: []
+--- !u!114 &-2426355912040047362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4095e5fe4b954920a6705817d3fd6744, type: 3}
+  m_Name: WitCharacterData
+  m_EditorClassIdentifier: 
+  characters: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,8 +36,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
-  m_Name: customNLP
-  m_EditorClassIdentifier: Meta.WitAi::Meta.WitAi.Data.Configuration.WitConfiguration
+  m_Name: Shapes - WitConfiguration
+  m_EditorClassIdentifier: 
   _clientAccessToken: HJERYOR2LNF7KO6US5MSPHELKY4FUG6Y
   editorVersionTag: 
   buildVersionTag: 
@@ -562,8 +588,8 @@ MonoBehaviour:
       - phoneme_events
       - word_events
   _configData:
-  - {fileID: 6448772412106518076}
-  _configurationId: 29220ab1-9590-4d5a-86b5-1c0033a37188
+  - {fileID: -7588891467066084880}
+  _configurationId: 4e21a24e472ab684e84db753427d5687
   _requestType: 0
   _requestTimeoutMs: 10000
   endpointConfiguration:
@@ -577,15 +603,15 @@ MonoBehaviour:
     _synthesize: 
     _event: 
     _converse: 
-  isDemoOnly: 0
+  isDemoOnly: 1
   useIntentAttributes: 1
-  useConduit: 1
-  _manifestLocalPath: ConduitManifest-f784bb39-be86-4571-8e79-e830dea3ed99.json
+  useConduit: 0
+  _manifestLocalPath: ConduitManifest-63301a14-cdfe-465a-91c0-0d8db67feb7f.json
   excludedAssemblies:
   - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   relaxedResolution: 0
---- !u!114 &6448772412106518076
+--- !u!114 &2777271245171985213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -594,7 +620,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c2918ba0e7451694416d42d69e0944, type: 3}
-  m_Name: WitComposerData
-  m_EditorClassIdentifier: Meta.Wit.Composer::Meta.WitAi.Composer.Data.Info.WitComposerData
-  canvases: []
+  m_Script: {fileID: 11500000, guid: 3f23565a6e584061b45b8bba0c7cee1c, type: 3}
+  m_Name: WitAiTaskData
+  m_EditorClassIdentifier: 
