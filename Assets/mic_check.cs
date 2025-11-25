@@ -9,6 +9,8 @@ public class PushToTalk : MonoBehaviour
     public InputActionProperty buttonAction;
     public Animator characterAnimator;
 
+    public AvatarFollowPlayer avatar;
+
     private bool isHeld = false;
 
     private void OnEnable()
@@ -88,33 +90,44 @@ public class PushToTalk : MonoBehaviour
             if (transcript.Contains("sit"))
             {
                 Debug.Log("Detected 'sit'");
+                avatar.sitting = true;
                 characterAnimator.SetTrigger("Sit");
+                
             }
             else if (transcript.Contains("set"))
             {
                 Debug.Log("Detected 'sit'");
+                avatar.sitting = true;
                 characterAnimator.SetTrigger("Sit");
+                
             }
             else if (transcript.Contains("stand"))
             {
                 Debug.Log("Detected 'stand'");
+                avatar.sitting = false;
                 characterAnimator.SetTrigger("Stand");
+                
             }
             else if (transcript.Contains("dance"))
             {
                 Debug.Log("Detected 'dance'");
+                avatar.sitting = false;
                 characterAnimator.SetTrigger("Dance");
+                
             }
             else if (transcript.Contains("love you") || (transcript.Contains("like you") && !transcript.Contains("don't like")))
             {
                 Debug.Log("Detected 'love'");
+                avatar.sitting = false;
                 characterAnimator.SetTrigger("Love");
+                
             }
             foreach (string keyword in sadKeywords)
             {
                 if (transcript.Contains(keyword))
                 {
                     Debug.Log($"Detected 'sad");
+                    avatar.sitting = false;
                     characterAnimator.SetTrigger("Sad");
                     break;
                 }
